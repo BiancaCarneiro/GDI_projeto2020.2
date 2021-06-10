@@ -5,5 +5,6 @@
 
 <h2>Integrantes:</h2>
 <p> Bianca Carneiro da Cunha Nunes Ferreira (bccnf@cin.ufpe.br)
-Caio de Mendonça Barbosa (cmb2@cin.ufpe.br)
+</p>
+<p>Caio de Mendonça Barbosa (cmb2@cin.ufpe.br)
 </p>
