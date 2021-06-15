@@ -9,6 +9,7 @@
       Rodrigo Abreu Alves de Freitas Mota ( <a href="mailto:raafm@cin.ufpe.br">raafm@cin.ufpe.br</a>)<br>
       Elisson Rodrigo da Silva Araujo ( <a href="mailto:ersa@cin.ufpe.br">ersa@cin.ufpe.br</a>)<br>
       André Arraes de Alencar Valença ( <a href="mailto:aaav@cin.ufpe.br">aaav@cin.ufpe.br</a>)<br>
+      Pedro Henrique Sarmento de Paula ( <a href="mailto:phsp@cin.ufpe.br">aaav@cin.ufpe.br</a>)<br>
     </p>
   </body>
 </html>
