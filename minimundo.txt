@@ -1,0 +1,15 @@
+Minimundo - Steam
+
+Eis um modelo de sistema organizacional de Banco de Dados da empresa Valve Corporation, que gerencia o software de gestão de direitos digitais e desenvolvimento de jogos Steam:
+
+A Steam tem desenvolvedoras (ID, nome, quantidade de jogos), que fazem jogos. Um jogo é obrigatoriamente feito por até uma desenvolvedora, que pode, por sua vez, fazer vários jogos. Cada jogo (preço, nome, características) é identificado por sua desenvolvedora. Caso um desenvolvedor tenha feito vários jogos, eles têm uma sub-identificação a partir de um número.
+
+Entre as características de um jogo, temos duas: gênero (um jogo pode ter um ou mais gêneros, i.e., "ação e fantasia") e faixa etária.
+
+Uma desenvolvedora é contratualmente composta por empregados (nome, cpf). Uma desenvolvedora pode ter vários empregados. Ao mesmo tempo, uma pessoa pode trabalhar para mais de uma desenvolvedora. As equipes estão divididas da seguinte forma: um empregado pode chefiar vários "coadjuvantes", mas um coadjuvante só pode ter um chefe.
+
+Vale salientar que um empregado pode ser dividido entre estagiário e sênior, porque cada um deles tem atributos distintos. Um estagiário, por exemplo, recebe uma bolsa e está vinculado a uma faculdade, enquanto que um sênior tem uma área específica de atuação e recebe um salário.
+
+Voltando a falar de jogos, eles podem ser comprados por consumidores que frequentam as lojas virtuais (cada qual com um nome e um catálogo de jogos); estas compras têm, evidentemente, um valor e um meio de pagamento. Ocasionalmente, há promoções disponíveis às compras, ou seja, não é algo sempre presente nesta ação.
+
+Finalmente, os consumidores que comprarão os jogos são registrados com um nome, um usuário e o e-mail. O e-mail será o elemento distintivo de cada usuário.
