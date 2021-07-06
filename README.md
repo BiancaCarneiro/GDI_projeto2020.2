@@ -12,5 +12,6 @@
       Pedro Henrique Sarmento de Paula ( <a href="mailto:phsp@cin.ufpe.br">phsp@cin.ufpe.br</a>)<br>
     </p>
     <img src="EsquemaEERCase.PNG" alt="EsquemaEERCase" width="900" height="600">
+    
   </body>
 </html>
