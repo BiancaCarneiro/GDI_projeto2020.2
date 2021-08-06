@@ -10,6 +10,6 @@ Uma desenvolvedora é contratualmente composta por empregados (nome, cpf). Uma d
 
 Vale salientar que um empregado pode ser dividido entre estagiário e sênior, porque cada um deles tem atributos distintos. Um estagiário, por exemplo, recebe uma bolsa e está vinculado a uma faculdade, enquanto que um sênior tem uma área específica de atuação e recebe um salário.
 
-Voltando a falar de jogos, eles podem ser comprados por consumidores que frequentam as lojas virtuais (cada qual com um nome e um catálogo de jogos); estas compras têm, evidentemente, um valor e um meio de pagamento. Ocasionalmente, há promoções disponíveis às compras, ou seja, não é algo sempre presente nesta ação.
+Voltando a falar de jogos, eles podem ser comprados por consumidores; estas compras têm, evidentemente, um valor e um meio de pagamento. Ocasionalmente, há promoções (ID, Percentual do Desconto) disponíveis às compras, ou seja, não é algo sempre presente nesta ação.
 
 Finalmente, os consumidores que comprarão os jogos são registrados com um nome, um usuário e o e-mail. O e-mail será o elemento distintivo de cada usuário.
