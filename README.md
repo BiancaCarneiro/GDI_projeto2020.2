@@ -11,7 +11,7 @@
       André Arraes de Alencar Valença ( <a href="mailto:aaav@cin.ufpe.br">aaav@cin.ufpe.br</a>)<br>
       Pedro Henrique Sarmento de Paula ( <a href="mailto:phsp@cin.ufpe.br">phsp@cin.ufpe.br</a>)<br>
     </p>
+    <h2>Esquema EER</h2>
     <img src="EsquemaEERCase.PNG" alt="EsquemaEER" width="900" height="600">
-    
   </body>
 </html>
