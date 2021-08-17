@@ -12,6 +12,7 @@ TRUNCATE TABLE DESENVOLVEDORA
 
 
 --group by/having
+--Pega as desenvolvedoras que tem mais jogos que a media
 SELECT a.name as 'Nome', AVG(a.qtd_jogos)
 FROM DESENVOLVEDORA
 GROUP BY a.name
@@ -19,6 +20,7 @@ HAVING a.qtd_jogos > AVG(a.qtd_jogos)
 
 
 --Junção interna
+--Pega o nome do empregado e do seu chefe
 SELECT a.nome as 'funcionario', b.name as 'chefes'
 FROM EMPREGADO a
 INNER JOIN EMPREGADO b
