@@ -22,6 +22,7 @@ END
 SELECT Compra.Email, SUM(Compra.Valor) as totalPago
 FROM Compra
 GROUP BY Compra.Email
+HAVING SUM(Compra.Valor) > 80;
 
 
 
