@@ -1,9 +1,3 @@
---group by/having
---Pega as desenvolvedoras que tem mais jogos que a media
-SELECT AVG(a.qtd_jogos), a.name as "Nome"
-FROM DESENVOLVEDORA a
-GROUP BY a.name
-HAVING a.qtd_jogos > AVG(a.qtd_jogos)---Rever
 
 --Junção interna
 --Pega o nome do empregado e do seu chefe
