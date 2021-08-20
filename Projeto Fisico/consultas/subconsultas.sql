@@ -1,7 +1,5 @@
 /*
-Desenvolvedoras
- que fizeram 
- jogos com preco acima da media
+Retorna desenvolvedora com jogo de maior preço
  
  Subconsulta Escalar com Tabela
 */
