@@ -17,29 +17,10 @@ WHERE Desenvolvedora.ID in (
 END
 
 
---CONSUMIDORES QUE COMPRARAM ACIMA DA MEDIA
+--Pega os nomes dos jogos que tem a mesma faixa etária que o jogo de id 112
+SELECT NAME
+FROM JOGO J
+WHERE(j.car_faixa_etaria) = (SELECT car_faixa_etaria 
+                            FROM JOGO
+                            WHERE ID = 112);
 
-BEGIN
-
-SELECT Email
-FROM Consumidor
-WHERE tabelaGastos.totalPago > (
-    SELECT AVG(totalPago) as media
-    FROM (
-        SELECT Compra.Email, SUM(Compra.Valor) as totalPago
-        FROM Compra
-        GROUP BY Compra.Email
-    ) as tabelaGastos
-)
-END
-
-
---primeiro funcionario
-SELECT *
-FROM Empregado
-WHERE Empregado.CPF in (
-    SELECT Contrato.CPF,Min(data_contrato) primeira
-    FROM Contrato
-    GROUP BY Contrato.CPF
-    HAVING data_contrato = primeira
-)
