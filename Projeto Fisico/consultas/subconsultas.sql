@@ -17,6 +17,14 @@ WHERE Desenvolvedora.ID in (
 END
 
 
+
+--Group by: Pega o valor total da compra
+SELECT Compra.Email, SUM(Compra.Valor) as totalPago
+FROM Compra
+GROUP BY Compra.Email
+
+
+
 --Pega os nomes dos jogos que tem a mesma faixa etária que o jogo de id 112
 --Subconsulta de linha
 SELECT NAME
