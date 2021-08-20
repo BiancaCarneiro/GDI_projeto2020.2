@@ -18,6 +18,7 @@ END
 
 
 --Pega os nomes dos jogos que tem a mesma faixa etária que o jogo de id 112
+--Subconsulta de linha
 SELECT NAME
 FROM JOGO J
 WHERE(j.car_faixa_etaria) = (SELECT car_faixa_etaria 
