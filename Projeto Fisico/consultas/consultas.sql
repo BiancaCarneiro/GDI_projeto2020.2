@@ -33,7 +33,7 @@ SELECT a.name as "Desenvolvedoras com jogos"
 FROM DESENVOLVEDORA a
 WHERE a.qtd_jogos > 0
 
---left outer join de desenvolvedora com jogo, ainda mostrando as devs que não estão na relação / order by
+--left outer join de desenvolvedora com jogos de preço maior que 10, ainda mostrando as devs que não estão na relação / order by
 SELECT j.preco, j.name, d.name, d.qtd_jogos
 FROM Desenvolvedora D LEFT OUTER JOIN Jogo J
 ON J.ID = D.ID
