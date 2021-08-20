@@ -1,7 +1,7 @@
 
 --Junção interna
 --Pega o nome do empregado e do seu chefe
-SELECT a.name as "funcionario", b.name as "chefes"
+SELECT a.name as "chefe", b.name as "subordinados"
 FROM EMPREGADO a
 INNER JOIN EMPREGADO b
 ON a.cpf = b.cpf_chefe
