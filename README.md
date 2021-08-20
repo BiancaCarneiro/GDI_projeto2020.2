@@ -10,6 +10,8 @@
       Elisson Rodrigo da Silva Araujo ( <a href="mailto:ersa@cin.ufpe.br">ersa@cin.ufpe.br</a>)<br>
       André Arraes de Alencar Valença ( <a href="mailto:aaav@cin.ufpe.br">aaav@cin.ufpe.br</a>)<br>
       Pedro Henrique Sarmento de Paula ( <a href="mailto:phsp@cin.ufpe.br">phsp@cin.ufpe.br</a>)<br>
+      
+      O slide da apresentação está no arquivo pptx no main branch
     </p>
     <h2>Esquema EER</h2>
     <img src="EsquemaEERCase.PNG" alt="EsquemaEER">
