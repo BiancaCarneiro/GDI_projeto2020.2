@@ -62,7 +62,10 @@ insert into CAR_GENEROS (id, codigo, generos) values (111, 27, 'Luta');
 insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('aaav@cin.ufpe.br', 123, 10, 20, 'Cartao de Credito');
 insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('boy@yahoo.com', 112, 44, 88.72, 'Debito Online');
 insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('girl@bol.com', 877, 98, 89,  'PayPal');
+insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('girl@bol.com', 892, 56, 11,  'PayPal');
+insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('girl@bol.com', 112, 44, 88.72, 'Debito Online');
 insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('vampirodoidao89@hotmail.com', 892, 33, 77, 'PayPal');
+insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('vampirodoidao89@hotmail.com', 123, 10, 20, 'PayPal');
 insert into COMPRA (email, id, codigo, valor, meio_de_pag) values ('vamorebolar@gmail.com', 111, 27, 9.99, 'Pagou com boas energias');
 
 insert into ELEGIVEL_PROM (id, email, id_dev, codigo) values (3333, 'aaav@cin.ufpe.br', 123, 10);
