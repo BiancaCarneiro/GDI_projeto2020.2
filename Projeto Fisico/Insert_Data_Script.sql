@@ -19,7 +19,6 @@ insert into ESTAGIARIO (cpf, bolsa, faculdade) values ('77777777777', 1500, 'Uni
 insert into ESTAGIARIO (cpf, bolsa, faculdade) values ('55555555555', 1800, 'Fafire');
 
 insert into SENIOR (cpf, area, salario) values ('44444444444', 'TI', 5000);
-insert into SENIOR (cpf, area, salario) values ('55555555555', 'HR', 3500);
 insert into SENIOR (cpf, area, salario) values ('66666666666', 'Gerencia', 8000);
 insert into SENIOR (cpf, area, salario) values ('99999999999', 'TI', 5000);
 insert into SENIOR (cpf, area, salario) values ('88888888888', 'Limpeza', 1500);
