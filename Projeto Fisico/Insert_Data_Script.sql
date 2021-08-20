@@ -8,11 +8,11 @@ insert into EMPREGADO (cpf, name) values ('00000000000', 'Andre');
 insert into EMPREGADO (cpf, name, cpf_chefe) values ('22222222222', 'Bianca', '00000000000');
 insert into EMPREGADO (cpf, name) values ('33333333333', 'Caio');
 insert into EMPREGADO (cpf, name) values ('44444444444', 'Rod');
+insert into EMPREGADO (cpf, name) values ('99999999999', 'Carla');
 insert into EMPREGADO (cpf, name, cpf_chefe) values ('55555555555', 'Rodrigo','99999999999');
 insert into EMPREGADO (cpf, name) values ('66666666666', 'Pedro');
 insert into EMPREGADO (cpf, name) values ('77777777777', 'Aline');
 insert into EMPREGADO (cpf, name) values ('88888888888', 'Felicia');
-insert into EMPREGADO (cpf, name) values ('99999999999', 'Carla');
 
 insert into ESTAGIARIO (cpf, bolsa, faculdade) values ('33333333333', 2000, 'UFPE');
 insert into ESTAGIARIO (cpf, bolsa, faculdade) values ('77777777777', 1500, 'Unicap');
