@@ -3,11 +3,11 @@
 SELECT AVG(a.qtd_jogos), a.name as "Nome"
 FROM DESENVOLVEDORA a
 GROUP BY a.name
-HAVING a.qtd_jogos > AVG(a.qtd_jogos)
+HAVING a.qtd_jogos > AVG(a.qtd_jogos)---Rever
 
 --Junção interna
 --Pega o nome do empregado e do seu chefe
-SELECT a.nome as "funcionario", b.name as "chefes"
+SELECT a.name as "funcionario", b.name as "chefes"
 FROM EMPREGADO a
 INNER JOIN EMPREGADO b
 ON a.cpf = b.cpf_chefe
