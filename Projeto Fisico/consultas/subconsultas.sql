@@ -2,6 +2,8 @@
 Desenvolvedoras
  que fizeram 
  jogos com preco acima da media
+ 
+ Subconsulta Escalar com Tabela
 */
 BEGIN
 
