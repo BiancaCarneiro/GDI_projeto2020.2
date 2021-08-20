@@ -7,14 +7,15 @@ Desenvolvedoras
 */
 BEGIN
 
-SELECT Nome
+SELECT Desenvolvedora.Name
 FROM Desenvolvedora
 WHERE Desenvolvedora.ID in (
-    SELECT ID,codigo, MAX(preco) as maior_preco
-    FROM Jogo
-    GROUP BY ID,codigo)
-    HAVING Jogo.preco = maior_preco
-
+    SELECT a.ID
+    FROM Jogo a
+    WHERE a.preco = (SELECT MAX(b.preco) as media_preco
+                      FROM Jogo b
+                     )
+    );
 END
 
 
