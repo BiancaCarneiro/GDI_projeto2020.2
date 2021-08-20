@@ -38,3 +38,10 @@ WHERE NOT EXISTS (SELECT 1
 SELECT a.name as "Desenvolvedoras com jogos"
 FROM DESENVOLVEDORA a
 WHERE a.qtd_jogos > 0
+
+--left outer join de desenvolvedora com jogo, pegando os jogos com preço maior que 10 / oder by
+SELECT j.preco, j.name, d.name, d.qtd_jogos
+FROM Desenvolvedora D LEFT OUTER JOIN Jogo J
+ON J.ID = D.ID
+	AND J.preco > 10
+ORDER BY J.name
