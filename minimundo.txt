@@ -8,7 +8,7 @@ Entre as características de um jogo, temos duas: gênero (um jogo pode ter um o
 
 Uma desenvolvedora é contratualmente composta por empregados (nome, cpf). Uma desenvolvedora pode ter vários empregados. Ao mesmo tempo, uma pessoa pode trabalhar para mais de uma desenvolvedora. As equipes estão divididas da seguinte forma: um empregado pode chefiar vários "coadjuvantes", mas um coadjuvante só pode ter um chefe.
 
-Vale salientar que um empregado pode ser dividido entre estagiário e sênior, porque cada um deles tem atributos distintos. Um estagiário, por exemplo, recebe uma bolsa e está vinculado a uma faculdade, enquanto que um sênior tem uma área específica de atuação e recebe um salário.
+Vale salientar que um empregado pode ser dividido entre estagiário e sênior, porque cada um deles tem atributos distintos. Um estagiário, por exemplo, recebe uma bolsa e está vinculado a uma faculdade, enquanto que um sênior tem uma área específica de atuação e recebe um salário. Aquele que não for estagiário nem sênior é o terceirizado, precisamos apenas do nome, do cpf do chefe e do cpf dele.
 
 Voltando a falar de jogos, eles podem ser comprados por consumidores; estas compras têm, evidentemente, um valor e um meio de pagamento. Ocasionalmente, há promoções (ID, Percentual do Desconto) disponíveis às compras, ou seja, não é algo sempre presente nesta ação.
 
