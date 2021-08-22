@@ -11,7 +11,10 @@
       André Arraes de Alencar Valença ( <a href="mailto:aaav@cin.ufpe.br">aaav@cin.ufpe.br</a>)<br>
       Pedro Henrique Sarmento de Paula ( <a href="mailto:phsp@cin.ufpe.br">phsp@cin.ufpe.br</a>)<br>
     </p>
-    <h3>Arquivo da apresentacao no pptx no main branch</h3>
+    <h2>Links dos Slides</h2>
+    <p>  
+      <a href="https://docs.google.com/presentation/d/1ukphXlbhtCCrfMCaW3fWd24BapA3g1a0Knf5MKH9tsc/edit?usp=sharing">Primeira defesa</a>
+    </p>
     <h2>Esquema EER</h2>
     <img src="EsquemaEERCase.PNG" alt="EsquemaEER">
   </body>
