@@ -13,7 +13,7 @@
     </p>
     <h2>Links dos Slides</h2>
     <p>  
-      <a href="https://docs.google.com/presentation/d/1ukphXlbhtCCrfMCaW3fWd24BapA3g1a0Knf5MKH9tsc/edit?usp=sharing">Primeira defesa</a>
+      <a href="https://docs.google.com/presentation/d/1ukphXlbhtCCrfMCaW3fWd24BapA3g1a0Knf5MKH9tsc/edit?usp=sharing" target="_blank">Primeira defesa</a>
     </p>
     <h2>Esquema EER</h2>
     <img src="EsquemaEERCase.PNG" alt="EsquemaEER">
