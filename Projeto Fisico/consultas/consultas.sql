@@ -39,3 +39,10 @@ FROM Desenvolvedora D LEFT OUTER JOIN Jogo J
 ON J.ID = D.ID
 	AND J.preco > 10
 ORDER BY J.name
+
+
+-- funcionarios contratados em ordem de contratação
+SELECT Empregado.CPF,	Empregado.Name as "nome",Contrato.data_contrato
+FROM Empregado INNER JOIN Contrato
+ON Empregado.CPF = Contrato.CPF
+ORDER BY Contrato.data_contrato asc
