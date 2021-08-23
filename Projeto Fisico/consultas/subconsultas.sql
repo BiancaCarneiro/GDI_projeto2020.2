@@ -18,6 +18,17 @@ END
 
 
 
+--primeiro funcionario contratado de todas as empresas. subconsulta do tipo escalar
+
+SELECT Empregado.name, Contrato.data_contrato as "data"
+FROM Contrato INNER JOIN Empregado
+ON Empregado.CPF = Contrato.CPF
+WHERE Contrato.data_contrato = (
+    SELECT MIN(data_contrato) as contrado_em
+    FROM Contrato
+    )
+
+
 --Group by: Pega o valor total da compra
 SELECT Compra.Email, SUM(Compra.Valor) as totalPago
 FROM Compra
