@@ -45,4 +45,4 @@ ORDER BY J.name
 SELECT Empregado.CPF,	Empregado.Name as "nome",Contrato.data_contrato
 FROM Empregado INNER JOIN Contrato
 ON Empregado.CPF = Contrato.CPF
-ORDER BY data_contrato asc
+ORDER BY Contrato.data_contrato asc
