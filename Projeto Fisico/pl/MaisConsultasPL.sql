@@ -39,24 +39,30 @@ END;
 
 -- Funcao com SQL embutida e parametro
 -- Pega a diferenca do salario dos funcionarios
-create or replace function getDif(cpf1 in varchar2(11 CHAR), cpf2 in varchar2(11 CHAR))    
-return number    
-is     
+CREATE OR REPLACE FUNCTION getDif (cpf1 in varchar2, cpf2 in varchar2)    
+RETURN NUMBER    
+IS     
   dif number;  
   sal1 number;
   sal2 number;  
-begin    
+BEGIN    
     SELECT salario INTO sal1
     FROM SENIOR
-    WHEre cpf = cpf1;
+    WHERE cpf = cpf1;
 
     SELECT salario INTO sal2
     FROM SENIOR
-    WHEre cpf = cpf2;
+    WHERE cpf = cpf2;
 
-    dif := ABS(sal1-sal2)
-  return dif;    
-end;
+    dif := ABS(sal1-sal2);
+  RETURN dif;    
+END;
+
+
+-- consulta com a funcao: -> pega a diferenca dos salarios dos funcionarios
+SELECT GETDIF(A.CPF, B.CPF), F.NAME AS FUNC1, G.NAME AS FUNC2
+FROM SENIOR A, SENIOR B, EMPREGADO F, EMPREGADO G
+WHERE A.CPF > B.CPF AND F.CPF = A.CPF AND G.CPF = B.CPF
 
 
 -- procedimento com parametros
