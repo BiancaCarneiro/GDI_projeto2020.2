@@ -28,10 +28,14 @@ BEGIN
         dbms_output.put_line(desconto); 
         EXIT WHEN cur_val%notfound;
     END LOOP;
+    CLOSE cur_val;
     UPDATE COMPRA c SET c.valor = c.valor*desconto
     WHERE c.email = :NEW.email AND c.id = :NEW.id_dev AND c.codigo = :new.codigo;
-    CLOSE cur_val;
 END;
+
+
+-- AINDA FALTA TESTAR:
+
 
 -- Funcao com SQL embutida e parametro
 -- Pega a diferenca do salario dos funcionarios
