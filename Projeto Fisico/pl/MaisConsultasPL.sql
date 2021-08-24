@@ -34,9 +34,6 @@ BEGIN
 END;
 
 
--- AINDA FALTA TESTAR:
-
-
 -- Funcao com SQL embutida e parametro
 -- Pega a diferenca do salario dos funcionarios
 CREATE OR REPLACE FUNCTION getDif (cpf1 in varchar2, cpf2 in varchar2)    
