@@ -11,25 +11,27 @@ end;
 
 -- Gatilho
 -- Muda o valor da compra quando há promoção
-create or replace trigger checaValorCompra
-    after insert on ELEGIVEL_PROM
-    for each row
-declare 
-    desconto NUMBER;
-    cursor cur_val is (
+CREATE OR REPLACE TRIGGER checaValorCompra
+    AFTER INSERT ON ELEGIVEL_PROM
+    FOR EACH ROW
+DECLARE 
+    CURSOR cur_val is
         SELECT p.percent_desconto
         FROM PROMOCAO p
-        WHERE new.id = p.id 
-    );
-begin
-    open cur_val;
-    loop
-        fetch cur_val into desconto;
+        WHERE :NEW.id = p.id;
+    desconto NUMBER;
+BEGIN
+    dbms_output.put_line  (user || ' Tables in the database:'); 
+    OPEN cur_val;
+    LOOP
+        FETCH cur_val into desconto;
+        dbms_output.put_line(desconto); 
         EXIT WHEN cur_val%notfound;
-    UPDATE COMPRA c;
-    SET c.valor = c.valor*desconto;
-    WHERE :new.(email, id, codigo) = c.(email, id, codigo);
-end;
+    END LOOP;
+    UPDATE COMPRA c SET c.valor = c.valor*desconto
+    WHERE c.email = :NEW.email AND c.id = :NEW.id_dev AND c.codigo = :new.codigo;
+    CLOSE cur_val;
+END;
 
 -- Funcao com SQL embutida e parametro
 -- Pega a diferenca do salario dos funcionarios
