@@ -78,18 +78,3 @@ insert into CONTRATO (cpf, id, data_contrato) values ('55555555555', 112,TO_DATE
 insert into CONTRATO (cpf, id, data_contrato) values ('22222222222', 112,TO_DATE('2018-04-12','YYYY-MM-DD'));
 insert into CONTRATO (cpf, id, data_contrato) values ('99999999999', 892,TO_DATE('2021-11-11','YYYY-MM-DD'));
 insert into CONTRATO (cpf, id, data_contrato) values ('33333333333', 222,TO_DATE('2011-01-22','YYYY-MM-DD'));
-
-
--- -- UPDATE TABLE_NAME
--- UPDATE ENDERECO
---     SET RUA = 'Rua Bahia', NUMERO = 90
---     WHERE RUA = 'Rua XX';
--- UPDATE PROFESSOR 
---     SET SALARIO = 5000.00
---     WHERE CARGO LIKE 'Titular%';
-
--- -- DELETE TABLE_NAME
--- DELETE MONITOR
---     WHERE CARGA_HORARIA = 40;
--- DELETE INSTRUIR
---     WHERE COD_CURSO IN (5, 6);
