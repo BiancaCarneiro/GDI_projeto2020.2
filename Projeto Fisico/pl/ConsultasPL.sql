@@ -1,5 +1,3 @@
--- CONSULTAS PL ANÔNIMAS
-
 -- Declarando variável do tipo linha, atribuindo-lhe valores
 -- e imprimindo um deles, concatenando com texto
 SET SERVEROUTPUT ON
@@ -12,6 +10,7 @@ BEGIN
     reg_estagiario.faculdade := 'UFPE';
     DBMS_OUTPUT.PUT_LINE('CPF: '|| reg_estagiario.cpf);
 END;
+
 
 -- Imprime quantidade de empregados usando select-into para
 -- inserir valor em variável a partir de consulta
