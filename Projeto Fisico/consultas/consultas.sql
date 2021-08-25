@@ -46,3 +46,9 @@ SELECT Empregado.CPF,	Empregado.Name as "nome",Contrato.data_contrato
 FROM Empregado INNER JOIN Contrato
 ON Empregado.CPF = Contrato.CPF
 ORDER BY Contrato.data_contrato asc
+
+-- operação conjunto
+-- sempre vai devolver nada, porque são disjuntos
+SELECT cpf from estagiario
+INTERSECT
+SELECT cpf from senior
