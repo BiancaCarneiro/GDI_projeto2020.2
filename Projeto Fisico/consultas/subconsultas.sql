@@ -37,11 +37,12 @@ HAVING SUM(Compra.Valor) > 80;
 
 
 
---Pega os nomes dos jogos que tem a mesma faixa etária que o jogo de id 112
+-- Pega todos os jogos que tenham o mesmo preço
+-- e mesma faixa etária que um determinado jogo
 --Subconsulta de linha
-SELECT NAME
-FROM JOGO J
-WHERE(j.car_faixa_etaria) = (SELECT car_faixa_etaria 
-                            FROM JOGO
-                            WHERE ID = 112);
+SELECT J.name
+FROM jogo J
+WHERE (J.PRECO, J.CAR_FAIXA_ETARIA) = (SELECT JR.PRECO, JR.CAR_FAIXA_ETARIA
+                                       FROM jogo JR
+                                       WHERE JR.codigo = 27 AND JR.id = 111)
 
