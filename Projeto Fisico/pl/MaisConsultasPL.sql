@@ -11,6 +11,7 @@ end;
 
 -- Gatilho
 -- Muda o valor da compra quando há promoção
+-- com cursor
 CREATE OR REPLACE TRIGGER checaValorCompra
     AFTER INSERT ON ELEGIVEL_PROM
     FOR EACH ROW
@@ -29,9 +30,27 @@ BEGIN
         EXIT WHEN cur_val%notfound;
     END LOOP;
     CLOSE cur_val;
-    UPDATE COMPRA c SET c.valor = c.valor*desconto
+    UPDATE COMPRA c SET c.valor = c.valor - c.valor*desconto
     WHERE c.email = :NEW.email AND c.id = :NEW.id_dev AND c.codigo = :new.codigo;
 END;
+
+-- sem cursor MAIS SIMPLES
+
+
+CREATE OR REPLACE TRIGGER checaValorCompra
+    AFTER INSERT ON ELEGIVEL_PROM
+    FOR EACH ROW
+DECLARE 
+    desconto NUMBER;
+BEGIN
+    SELECT p.percent_desconto into desconto
+    FROM PROMOCAO p
+    WHERE :NEW.id = p.id;
+    UPDATE COMPRA c SET c.valor = c.valor - c.valor*desconto
+    WHERE c.email = :NEW.email AND c.id = :NEW.id_dev AND c.codigo = :new.codigo;
+END;
+
+
 
 
 -- Funcao com SQL embutida e parametro
