@@ -17,6 +17,6 @@
       <a href="https://docs.google.com/presentation/d/1g0kEkb4plu76ai025nZn1Q5iHnpbMWM64Mz9eN-uBRI/edit?usp=sharing" target="_blank">Segunda defesa</a>
     </p>
     <h2>Esquema EER</h2>
-    <img src="Projeto Lógico:Conceitual/EsquemaEERCase.PNG" alt="EsquemaEER">
+    <img src="https://github.com/BiancaCarneiro/GDI_projeto2020.2/blob/main/Projeto%20L%C3%B3gico:Conceitual/EsquemaEERCase.PNG?raw=true" alt="EsquemaEER">
   </body>
 </html>
