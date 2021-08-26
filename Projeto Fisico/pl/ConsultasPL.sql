@@ -3,7 +3,6 @@
 -- Procedure parametrizado, sem retorno, com uso de cursor
 -- (lista todos os jogos de uma determinada desenvolvedora)
 CREATE OR REPLACE PROCEDURE list_jogos_des (desnum number) IS
-    -- insere o codigo da desenvolvedora
     des_name desenvolvedora.name%type;
     jogo_des jogo.name%type;
     i number := 1;

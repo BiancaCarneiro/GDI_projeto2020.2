@@ -42,7 +42,7 @@ INTERSECT
 SELECT cpf from senior
 
 
--- Retorna desenvolvedora com jogo de maior preço
+-- Retorna desenvolvedoras com jogo de maior preço
 -- Subconsulta Escalar com Tabela
 SELECT Desenvolvedora.Name
 FROM Desenvolvedora
