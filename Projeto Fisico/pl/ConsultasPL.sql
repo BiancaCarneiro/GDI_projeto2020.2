@@ -36,7 +36,7 @@ CREATE OR REPLACE FUNCTION checa_compras (emailAtual varchar2) RETURN NUMBER IS
     qtdC number;
 BEGIN
     select count(*) into qtdC from jogo j
-    where (j.id, j.codigo) =
+    where (j.id, j.codigo) in
                         (select c.id, c.codigo from compra c
                         where c.email = emailAtual);
     return qtdC;
